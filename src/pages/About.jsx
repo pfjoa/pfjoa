@@ -116,7 +116,7 @@ const About = () => {
   return (
     <div className="container w-10/12 mx-auto mt-10">
       <div className="flex flex-col items-center space-y-10 justify-around space-x-10 xl:flex-row">
-        <div className="flex flex-col gap-3 max-w-[450px] min-w-[250px]">
+        <div className="flex flex-col gap-3 max-w-[450px] min-w-[250px] text-justify">
           <h1 className="text-[#040650] font-bold uppercase text-2xl">
             À propos de nous
           </h1>
@@ -124,7 +124,7 @@ const About = () => {
             La Plateforme des jeunes d'Oujda-Angad (PFJOA) est un espace qui
             vise à soutenir les jeunes entrepreneurs et à renforcer leurs
             compétences dans le cadre du programme “ Amélioration de revenue et
-            inclusion des jeunes ” de l’Initiative nationale pour le
+            inclusion des jeunes ” de l'Initiative nationale pour le
             développement humain (INDH). Ce programme s'inscrit dans le cadre de
             la troisième phase de l'INDH et vise à concrétiser les objectifs du
             programme.

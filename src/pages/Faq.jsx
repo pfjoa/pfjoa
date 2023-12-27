@@ -84,7 +84,7 @@ const Faq = () => {
               <span className="text-[#090b24]">{selected === index ? "-" : "+"}</span>
             </div>
             <div className={selected === index ? "h-auto max-h-[9999px] transition-all ease-[cubic(0,0.4,0,0.2)] duration-1000" : "overflow-hidden max-h-0 transition-all duration-200"}>
-              <p>{element.answer}</p>
+              <p className="text-justify">{element.answer}</p>
             </div>
           </div>
         ))}

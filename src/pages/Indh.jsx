@@ -95,7 +95,7 @@ const Indh = () => {
               className="z-1 rounded-2xl h-[485px] sm:hover:-translate-y-12 sm:hover:translate-x-12 transition-all duration-500"
             />
           </div>
-          <div className="flex flex-col gap-y-5 w-12/12 xl:w-8/12">
+          <div className="flex flex-col gap-y-5 w-12/12 xl:w-8/12 text-center xl:text-justify">
             <p className="text-[#717171] text-sm font-medium w-12/12 xl:w-9/12">
               L'Initiative Nationale du Développement Humain (INDH) est un
               programme lancé par le Roi Mohammed VI, que Dieu L'assiste, en mai
@@ -123,7 +123,7 @@ const Indh = () => {
               nouvelle génération d'initiatives génératrices de revenus et
               d'emplois.”
             </p>
-            <p className="self-end text-sm font-medium xl:self-center w-7/12">
+            <p className="self-end text-sm font-medium xl:self-center w-6/12">
               Extrait du Discours à la Nation prononcé par Sa Majesté le Roi
               Mohammed VI Que Dieu L'Assiste, à l'occasion de la fête du Trône
               le 29 juillet 2018
@@ -163,7 +163,7 @@ const Indh = () => {
               className="max-w-[350px] 2xl:max-w-[500px] mx-auto"
             />
           </div>
-          <p className="max-w-[600px] self-center uppercase text-sm">
+          <p className="max-w-[600px] self-center uppercase text-sm text-center xl:text-justify">
             L'Initiative nationale pour le développement humain (INDH) a
             plusieurs objectifs clés. Elle visait à réduire le déficit social
             dans les zones urbaines et rurales en améliorant l'accès aux
