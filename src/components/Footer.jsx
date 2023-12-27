@@ -1,28 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Socials from "./Socials";
 
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <div>
-      <div className="flex flex-col lg:flex-row mx-auto lg:items-center gap-6 lg:justify-evenly w-80 lg:w-full mt-24">
+    <div className="relative bottom-0 h-fit w-full">
+      <div className="border border-[#C8C8C8] w-[80%] mx-auto rounded-full mt-24"></div>
+      <div className="flex items-center justify-center flex-col lg:flex-row gap-y-[3vh] gap-x-[2vw] mt-10">
+        <img src="images/indh.png" alt="indh" className="w-[350px]" />
+        <img src="/images/logo.png" alt="logo" className="w-[200px]" />
+      </div>
+      <div className="flex flex-col lg:flex-row mx-auto lg:items-start gap-6 lg:justify-evenly w-80 lg:w-full mt-10">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
-            <img src="images/footerLogo.svg" alt="logo" className="w-12" />
             <h1 className="text-lg font-bold text-[#040650]">
               Plateforme des jeunes
             </h1>
           </div>
           <p className="text-[#5F5F5F] w-80">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-            fringilla, mattis ligula consectetur.
+            Avec dévouement, cultivons vos aspirations vers la réussite.
+            Ensemble, avançons main dans la main vers un avenir prometteur et
+            inspirant.
           </p>
         </div>
         <div>
           <h1 className="font-semibold text-[#040650]">Shortcuts</h1>
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col gap-2 uppercase">
             <li>
               <Link to="/">Accueil</Link>
             </li>
@@ -30,26 +35,24 @@ const Footer = () => {
               <Link to="about">À propos</Link>
             </li>
             <li>
-              <Link to="">Events</Link>
+              <Link to="about">Indh</Link>
             </li>
             <li>
-              <Link to="">Contactez-Nous</Link>
+              <Link to="events">Events</Link>
+            </li>
+            <li>
+              <Link to="faq">faq</Link>
+            </li>
+            <li>
+              <Link to="contact">Contactez-Nous</Link>
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-4">
-          <h1 className="font-semibold text-[#040650]">Suivez-nous</h1>
-          <div className="flex gap-2">
-            <Link
-              to="https://www.facebook.com/profile.php?id=100064845486341"
-              target="_blank"
-            >
-              <img src="images/facebook.svg" alt="facebook" className="w-10" />
-            </Link>
-            <img src="images/instagram.svg" alt="instagram" className="w-10" />
-            <img src="images/linkedin.svg" alt="linkedin" className="w-10" />
-            <img src="images/twitter.svg" alt="twitter" className="w-10" />
-          </div>
+        <div className="flex flex-col gap-y-5 lg:gap-y-10">
+          <Socials />
+          <a href="annexes.pdf" className="font-bold uppercase text-[#040650] hover:text-[#1e1f88]" download>
+            Téléchargez les annexes
+          </a>
         </div>
       </div>
       <p className="bg-[#0C3F8A] text-white text-sm px-2 py-4 text-center mt-5">

@@ -2,27 +2,25 @@ import React from "react";
 import { CardObjectifs } from "../components/Card-objectif";
 import Button from "../components/Button";
 import Card from "../components/Card";
-import Footer from "../components/Footer";
-
 export const Home = () => {
   const objectifCardInfo = [
     {
       image: "/images/bureau.svg",
       imageAlt: "bureau",
-      title: "Accueil et réception",
-      desc: "La plateforme des jeunes oujda-angad vous accueillera avec bras ouverts",
+      title: "Accueil et Réception",
+      desc: "La plateforme des jeunes oujda-angad vous réserve un accueil bienveillant",
     },
     {
       image: "/images/ear.svg",
       imageAlt: "ear",
-      title: "Ecouter et guider",
-      desc: "Nous écouterons vos idées et vous guiderons jusqu'à ce que tout ce dont vous avez besoin soit prêt",
+      title: "Ecouter et Orientation",
+      desc: "Un service de proximité pour informer, orienter et accompagner les jeunes",
     },
     {
       image: "/images/person.svg",
       imageAlt: "Formation des jeunes",
       title: "Formation des jeunes",
-      desc: "Tout au long du processus, il y aura des choses que vous ne savez peut-être pas, nous vous formerons sur tout ce que vous ne savez pas.",
+      desc: "Apprendre et améliorer vos niveaux afin de mieux répondre aux exigences de marché"
     },
   ];
   // About and events info array
@@ -30,9 +28,9 @@ export const Home = () => {
     {
       image: "images/AboutPic.png",
       title: "à propos",
-      titleAbout: "Nous commençons par découvrir vos idées",
+      titleAbout: "Qu'est-ce que la Plateforme des Jeunes?",
       aboutDesc:
-        "Vous présentez vos idées et nous discuterons des détails essentiels comme ce dont vous auriez besoin, les équipements et les choses nécessaires pour rassembler votre dossier.",
+        "La Plateforme des Jeunes Oujda Angad est intégrée au Programme de l'Initiative Nationale pour le Développement Humain. Elle représente un espace dédié à l'essor de l'esprit entrepreneurial chez les jeunes de la préfecture d'Oujda Angad, favorisant également leur employabilité.",
     },
     {
       image: "images/meeting-office.svg",
@@ -45,35 +43,33 @@ export const Home = () => {
 
   return (
     <div className="overflow-hidden">
-      <div className="flex flex-col items-center lg:flex-row lg:justify-around mt-8">
+      <div className="flex flex-col items-center xl:flex-row xl:justify-center gap-[5vw] mt-8">
         <div className="flex flex-col gap-7 h-fit ml-8">
-          <h1 className="font-semibold text-4xl lg:text-5xl 3xl:text-7xl 3xl:w-[800px] text-[#040650] w-80 lg:w-96 lg:leading-snug">
-            Alimenter Vos Aspirations Commerciales
+          <h1 className="font-semibold text-4xl lg:text-5xl text-[#040650] w-80 lg:w-[500px] lg:leading-snug">
+          Accompagner Votre Développement Professionnel
           </h1>
-          <p className="w-80 3xl:w-[800px] 3xl:text-4xl text-[#636C7D]">
-            Nous fournissons l'énergie et le soutien pour nourrir vos
-            aspirations commerciales, enflammant votre chemin vers le succès et
-            la croissance.
+          <p className="w-80 text-[#636C7D]">
+            Nous fournissons le soutien et l'accompagnement des jeunes dans l'objectif d'insertion professionnelle et de leur développement, enflammant votre chemin vers le succès et la croissance.
           </p>
           <div className="flex items-center gap-2">
-            <Button />
-            <span>Video player</span>
+            <Button href="#apropos" normal="no"/>
           </div>
         </div>
         <div>
           <img
-            src="images/hero-illustration.svg"
-            alt=""
-            className="w-[300px] lg:w-[450px]"
+            src="images/hero-illustration.png"
+            alt="illustration"
+            className="w-[300px] lg:w-[400px]"
           />
         </div>
       </div>
       <div className="flex flex-col items-center text-center gap-12 mt-10 py-10">
-        <h1 className="uppercase text-[#424686]">notre objectifs</h1>
-        <div className="flex flex-col lg:flex-row items-start flex-wrap gap-12 mx-8">
-          {objectifCardInfo.map((e) => {
+        <h1 className="uppercase text-[#424686]">notre services</h1>
+        <div className="flex flex-col lg:flex-row items-start flex-wrap gap-[3vw] mx-8">
+          {objectifCardInfo.map((e, index) => {
             return (
               <CardObjectifs
+                key={index}
                 image={e.image}
                 imageAlt={e.imageAlt}
                 title={e.title}
@@ -90,7 +86,7 @@ export const Home = () => {
           className="absolute top-[100vh] w-20 opacity-70"
         />
       </div>
-      <div className="flex flex-col gap-9 mt-10 px-8 lg:flex-row items-center justify-evenly">
+      <div className="flex flex-col gap-[9vw] mt-10 px-8 lg:flex-row items-center justify-center" id="apropos">
         <h1 className="uppercase text-center font-medium text-[#424686] lg:hidden">
           {AboutEvents[0].title}
         </h1>
@@ -106,15 +102,16 @@ export const Home = () => {
             className="absolute w-20 z-[-1] top-[-20px] left-[-25px]"
           />
         </div>
-        <div className="w-80 mt-10">
+        <div className="w-[350px] mt-10">
           <Card
             title={AboutEvents[0].title}
             cardTitle={AboutEvents[0].titleAbout}
             cardDesc={AboutEvents[0].aboutDesc}
+            aboutOrEvent={"about"}
           />
         </div>
       </div>
-      <div className="flex flex-col gap-9 mt-10 px-8 lg:flex-row-reverse items-center justify-evenly">
+      <div className="flex flex-col gap-[9vw] mt-10 px-8 lg:flex-row-reverse items-center justify-center mb-16">
         <h1 className="uppercase text-center font-medium text-[#424686] lg:hidden">
           {AboutEvents[1].title}
         </h1>
@@ -135,11 +132,10 @@ export const Home = () => {
             title={AboutEvents[1].title}
             cardTitle={AboutEvents[1].titleEvents}
             cardDesc={AboutEvents[1].EventsDesc}
+            aboutOrEvent={"events"}
           />
         </div>
       </div>
-      <div className="border border-[#C8C8C8] w-[80%] mx-auto rounded-full mt-24"></div>
-      <Footer />
     </div>
   );
 };

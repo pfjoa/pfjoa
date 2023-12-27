@@ -13,4 +13,14 @@
 }
 body {
   background-color: #f4f7fc;
+  scroll-behavior: smooth;
+}
+.active{
+  font-weight: Bold;
+  border-bottom: 2px solid #344ED6;
+}
+
+.spikyRect {
+  -webkit-filter: drop-shadow( 4px 10px 40px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 4px 10px 30px rgba(0, 0, 0, .5));
 }
