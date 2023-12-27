@@ -36,7 +36,7 @@ const About = () => {
     missionSmallTitle: "mission",
     missionTitle: "notre mission",
     missionContent:
-      "Nous engageons à soutenir les jeunes dans leur intégration professionnelle en leur offrant un accompagnement adapté, que ce soit dans le monde du travail classique ou de l'entrepreneuriat, pour qu'ils puissent surmonter les obstacles et réussir dans leur parcours. Cela s'inscrit dans notre mission plus large d'insertion par l'activité économique.",
+      "Nous engageons à soutenir les jeunes dans leur intégration professionnelle en leur offrant un accompagnement adapté, que ce soit en employabilité ou en entrepreneuriat, pour qu'ils puissent surmonter les obstacles et réussir dans leur parcours. Cela s'inscrit dans notre mission plus large d'insertion par l'activité économique.",
     visionImage: "images/visions.png",
     missionImage: "images/missions.png",
     visionAlt: "vision",
