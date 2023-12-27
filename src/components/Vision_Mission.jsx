@@ -14,7 +14,7 @@ const Vision_Mission = ({visionSmallTitle, visionTitle, visionContent, missionSm
               {visionTitle}
             </h1>
           </div>
-          <p className="text-[#363636] w-[22em] mx-auto xl:mx-0 uppercase">
+          <p className="text-[#363636] w-[22em] mx-auto xl:mx-0 uppercase text-justify">
             {visionContent}
           </p>
         </div>
@@ -32,7 +32,7 @@ const Vision_Mission = ({visionSmallTitle, visionTitle, visionContent, missionSm
               {missionTitle}
             </h1>
           </div>
-          <p className="text-[#363636] w-[22em] mx-auto xl:mx-0 uppercase">
+          <p className="text-[#363636] w-[22em] mx-auto xl:mx-0 uppercase text-justify">
             {missionContent}
           </p>
         </div>
