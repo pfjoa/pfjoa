@@ -33,7 +33,7 @@ export const Home = () => {
         "La Plateforme des Jeunes Oujda Angad est intégrée au Programme de l'Initiative Nationale pour le Développement Humain. Elle représente un espace dédié à l'essor de l'esprit entrepreneurial chez les jeunes de la préfecture d'Oujda Angad, favorisant également leur employabilité.",
     },
     {
-      image: "images/meeting-office.png",
+      image: "images/meeting-office.pnge",
       title: "Events",
       titleEvents: "Les événements pédagogiques font partie du programme",
       EventsDesc:
