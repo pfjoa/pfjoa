@@ -163,7 +163,7 @@ const Indh = () => {
               className="max-w-[350px] 2xl:max-w-[500px] mx-auto"
             />
           </div>
-          <p className="max-w-[600px] self-center uppercase text-sm text-center xl:text-justify">
+          <p className="max-w-[600px] self-center uppercase text-sm text-center xl:text-justify text-[#383838]">
             L'Initiative nationale pour le développement humain (INDH) a
             plusieurs objectifs clés. Elle visait à réduire le déficit social
             dans les zones urbaines et rurales en améliorant l'accès aux
@@ -175,8 +175,10 @@ const Indh = () => {
             indicateurs sociaux. En outre, l'INDH visait à mettre en œuvre une
             méthodologie participative, à impliquer la société civile au niveau
             local et à intégrer tous les agents politiques, économiques et
-            sociaux locaux dans un processus unique. Elle visait également à
-            établir une procédure relativement transparente de définition des
+            sociaux locaux dans un processus unique. 
+            <br/>
+            <br/>
+            Elle visait également à établir une procédure relativement transparente de définition des
             priorités et d'appel d'offres public pour la soumission de projets
             ouverts aux groupes locaux, aux organisations professionnelles, aux
             syndicats, aux coopératives et aux associations en tant qu'agences

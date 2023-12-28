@@ -140,6 +140,7 @@ const About = () => {
           <img
             src="images/banner_about.png"
             alt="banner"
+            loading="lazy"
             className="w-[350px] lg:w-[450px]"
           />
         </div>
@@ -238,6 +239,7 @@ const About = () => {
               width="100%"
               height="100%"
               className="hidden lg:block"
+              loading="lazy"
             />
           </div>
         </div>

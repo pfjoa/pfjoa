@@ -13,7 +13,7 @@ const Events = () => {
           De plus, la plateforme collabore avec d'autres organisations pour fournir une formation et un soutien aux jeunes entrepreneurs, en mettant l'accent sur des domaines tels que le soutien à la pré-création et l'entrepreneuriat. Les événements visent à fournir aux jeunes les compétences et les connaissances dont ils ont besoin pour réussir sur le marché du travail et en tant qu'entrepreneurs.
           </p>
         </div>
-        <div><img src="images/presentation.png" alt="events-illustration" className='w-[350px] lg:w-[450px]'/></div>
+        <div><img src="images/presentation.png" alt="events-illustration" className='w-[350px] lg:w-[450px]' loading="lazy"/></div>
       </div>
       <div className='flex gap-[4vw] flex-wrap mt-16 justify-center md:justify-start'>
         {

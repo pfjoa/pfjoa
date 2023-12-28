@@ -43,12 +43,12 @@ export const Home = () => {
 
   return (
     <div className="overflow-hidden">
-      <div className="flex flex-col items-center xl:flex-row xl:justify-center gap-[5vw] mt-8">
+      <div className="flex flex-col items-center xl:flex-row xl:justify-evenly mt-8">
         <div className="flex flex-col gap-7 h-fit ml-8">
           <h1 className="font-semibold text-4xl lg:text-5xl text-[#040650] w-80 lg:w-[500px] lg:leading-snug">
           Accompagner Votre Développement Professionnel
           </h1>
-          <p className="w-80 text-[#636C7D]">
+          <p className="w-80 text-[#636C7D] text-start xl:text-justify">
             Nous fournissons le soutien et l'accompagnement des jeunes dans l'objectif d'insertion professionnelle et de leur développement, enflammant votre chemin vers le succès et la croissance.
           </p>
           <div className="flex items-center gap-2">
@@ -60,12 +60,13 @@ export const Home = () => {
             src="images/hero-illustration.png"
             alt="illustration"
             className="w-[300px] lg:w-[400px]"
+            loading="lazy"
           />
         </div>
       </div>
       <div className="flex flex-col items-center text-center gap-12 mt-10 py-10">
         <h1 className="uppercase text-[#424686]">notre services</h1>
-        <div className="flex flex-col lg:flex-row items-start flex-wrap gap-[3vw] mx-8">
+        <div className="flex flex-col lg:flex-row justify-center flex-wrap gap-y-16 gap-x-[5vw] mx-8">
           {objectifCardInfo.map((e, index) => {
             return (
               <CardObjectifs
@@ -95,6 +96,7 @@ export const Home = () => {
             src={AboutEvents[0].image}
             alt="meeting"
             className="z-[1] max-w-[350px]"
+            loading="lazy"
           />
           <img
             src="images/dots.svg"
@@ -119,7 +121,8 @@ export const Home = () => {
           <img
             src={AboutEvents[1].image}
             alt="meeting"
-            className="z-[1] max-w-[350px] "
+            className="z-[1] max-w-[350px]"
+            loading="lazy"
           />
           <img
             src="images/rings.svg"

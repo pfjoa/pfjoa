@@ -11,7 +11,9 @@ const Card = ({ cardTitle, cardDesc, title, aboutOrEvent }) => {
         {cardTitle}
       </h1>
       <p className="text-[#585858]">{cardDesc}</p>
-      <Button href={aboutOrEvent} normal="yes"/>
+      <div className="w-fit mx-auto lg:mx-0">
+        <Button href={aboutOrEvent} normal="yes" />
+      </div>
     </div>
   );
 };

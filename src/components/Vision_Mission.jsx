@@ -14,12 +14,12 @@ const Vision_Mission = ({visionSmallTitle, visionTitle, visionContent, missionSm
               {visionTitle}
             </h1>
           </div>
-          <p className="text-[#363636] w-[22em] mx-auto xl:mx-0 uppercase text-justify">
+          <p className="text-[#363636] w-[22em] mx-auto xl:mx-0 text-justify">
             {visionContent}
           </p>
         </div>
         <div>
-          <img src={visionImage} alt={visionAlt} />
+          <img src={visionImage} alt={visionAlt} loading="lazy"/>
         </div>
       </div>
       <div className="flex flex-col mt-10 xl:mt-0 items-center xl:items-start gap-y-10 xl:justify-center xl:gap-x-16 xl:flex-row-reverse">
@@ -32,12 +32,12 @@ const Vision_Mission = ({visionSmallTitle, visionTitle, visionContent, missionSm
               {missionTitle}
             </h1>
           </div>
-          <p className="text-[#363636] w-[22em] mx-auto xl:mx-0 uppercase text-justify">
+          <p className="text-[#363636] w-[22em] mx-auto xl:mx-0 text-justify">
             {missionContent}
           </p>
         </div>
         <div className="mt-0 xl:mt-[-3%]">
-          <img src={missionImage} alt={missionAlt} />
+          <img src={missionImage} alt={missionAlt} loading="lazy"/>
         </div>
       </div>
     </section>
