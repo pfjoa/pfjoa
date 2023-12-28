@@ -57,14 +57,14 @@ const Contact = () => {
             <h1 className="text-[#040650] font-bold text-xl w-fit uppercase pb-2">
               Contactez-nous
             </h1>
-            <p className="text-[#b8b6b6] pl-2 w-[300px] lg:w-[400px] pb-5">
+            <p className="text-[#b8b6b6] pl-2 w-[300px] lg:w-[400px] pb-5 text-center xl:text-start">
               Contactez-nous si vous avez quelque chose à nous demander.
             </p>
-            <div className="flex flex-col gap-[5vh] w-fit lg:w-[70%]">
-              <div className="flex flex-col gap-[5vh] lg:flex-row">
+            <div className="flex flex-col items-center gap-[5vh] w-fit lg:w-[70%]">
+              <div className="flex flex-col items-center gap-[5vh] lg:flex-row">
                 <input
                   type="text"
-                  className="border border-gray-400 rounded-md  w-fit lg:w-[70%] py-1 pl-1 outline-none"
+                  className="border border-gray-400 rounded-md w-[90%] lg:w-[70%] py-1 pl-2 outline-none p-2"
                   placeholder="Nom"
                   value={lastName}
                   onChange={(e) => {
@@ -74,7 +74,7 @@ const Contact = () => {
                 />
                 <input
                   type="text"
-                  className="border border-gray-400 rounded-md w-fit lg:w-[70%] py-1 pl-1 outline-none"
+                  className="border border-gray-400 rounded-md w-[90%] lg:w-[70%] py-1 pl-2 outline-none"
                   placeholder="Prénom"
                   value={firstName}
                   onChange={(e) => {
@@ -85,7 +85,7 @@ const Contact = () => {
               </div>
               <input
                 type="email"
-                className="border border-gray-400 rounded-md py-1 pl-1 outline-none"
+                className="border border-gray-400 rounded-md py-1 pl-2 outline-none w-[90%] lg:w-[100%]"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => {
@@ -94,7 +94,7 @@ const Contact = () => {
                 required
               />
               <textarea
-                className="border border-gray-400 h-32 rounded-md py-1 pl-1 resize-none outline-none"
+                className="border border-gray-400 h-32 rounded-md py-1 pl-2 resize-none outline-none w-[90%] lg:w-[100%]"
                 placeholder="Message..."
                 value={message}
                 onChange={(e) => {
@@ -104,7 +104,7 @@ const Contact = () => {
               ></textarea>
               <button
                 type="submit"
-                className="bg-[#040650] w-fit text-white py-1.5 px-8 text-center rounded-lg hover:bg-[#020322]"
+                className="bg-[#040650] w-fit text-white py-1.5 px-8 text-center rounded-lg hover:bg-[#020322] xl:self-start"
               >
                 Submit
               </button>
