@@ -43,7 +43,7 @@ export const Home = () => {
 
   return (
     <div className="overflow-hidden">
-      <div className="flex flex-col items-center xl:flex-row xl:justify-evenly mt-8">
+      <div className="flex flex-col items-center gap-y-8 xl:flex-row xl:justify-evenly mt-8">
         <div className="flex flex-col gap-7 h-fit ml-8">
           <h1 className="font-semibold text-4xl lg:text-5xl text-[#040650] w-80 lg:w-[500px] lg:leading-snug">
           Accompagner Votre Développement Professionnel
