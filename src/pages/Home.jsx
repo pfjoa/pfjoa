@@ -51,7 +51,7 @@ export const Home = () => {
           <p className="w-80 text-[#636C7D] text-start xl:text-justify">
             Nous fournissons le soutien et l'accompagnement des jeunes dans l'objectif d'insertion professionnelle et de leur développement, enflammant votre chemin vers le succès et la croissance.
           </p>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center self-center lg:self-start gap-2">
             <Button href="#apropos" normal="no"/>
           </div>
         </div>
