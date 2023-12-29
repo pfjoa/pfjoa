@@ -5,7 +5,7 @@ import Programme from "../components/Programme";
 const Indh = () => {
   const phases = [
     {
-      img: "images/walking_sheep.jpeg",
+      img: "images/walking_sheep.jpg",
       alt: "walking_sheep",
       title: "phase 1",
       paragraph: `
@@ -163,7 +163,7 @@ const Indh = () => {
               className="max-w-[350px] 2xl:max-w-[500px] mx-auto"
             />
           </div>
-          <p className="max-w-[600px] self-center uppercase text-sm text-center xl:text-justify text-[#383838]">
+          <p className="max-w-[600px] self-center text-sm text-center xl:text-justify text-[#383838]">
             L'Initiative nationale pour le développement humain (INDH) a
             plusieurs objectifs clés. Elle visait à réduire le déficit social
             dans les zones urbaines et rurales en améliorant l'accès aux
