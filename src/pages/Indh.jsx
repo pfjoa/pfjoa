@@ -5,7 +5,7 @@ import Programme from "../components/Programme";
 const Indh = () => {
   const phases = [
     {
-      img: "images/walking_sheep.jpg",
+      img: "images/walking_sheep.jpeg",
       alt: "walking_sheep",
       title: "phase 1",
       paragraph: `
