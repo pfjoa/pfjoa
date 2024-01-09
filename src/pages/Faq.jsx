@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Maintenance from "../components/Maintenance";
 const Faq = () => {
   const [selected, setSelected] = useState(null);
   const toggle = (i) => {
@@ -28,47 +29,42 @@ const Faq = () => {
     },
     {
       question: "Quelles sont les conditions pour postuler?",
-      answer: "lorem ipsum",
+      answer:
+        "Un jeune âgé de 18 ans jusqu'à 35 ans, et il y a des cas de dérogations jusqu'à 45 ans. Un projet d'une valeur ajoutée.",
     },
     {
       question: "Comment postuler?",
-      answer: "lorem ipsum",
+      answer:
+        "Durant l'appelle, il faut s'inscrire dans la plateforme des jeunes, et fournir les éléments essentiels de candidature demandés.",
     },
     {
       question: "Quelles sont les pieces necessaires pour postuler?",
-      answer: "lorem ipsum",
+      answer: "lorem",
     },
     {
       question: "Les cibles concernées par le programme 3?",
-      answer: "lorem ipsum",
+      answer:
+        "Les jeunes à la recherche des formations pour objet d'insertion dans le monde d'emploi. Les jeunes entrepreneurs à la recherche d'un financement pour leur entreprenariat dans la création ou l'amélioration de leur propre projet.",
     },
     {
       question: "Est ce qu'il faut avoir un statut juridique avant postuler?",
-      answer: "lorem ipsum",
+      answer: "Non, ce n'est pas obligatoire.",
     },
     {
       question:
         "Quelles sont les conditions necessaires pour postuler comme un statut de cooperative?",
-      answer: "lorem ipsum",
+      answer: `Une coopérative en activité plus qu'un an.
+      Les membres de la coopératives 30% sont des femmes et non familial.
+      `,
     },
     {
       question: "quel est le plafond de soutien?",
       answer:
-        "il s'agit de 100000dh pour l'entrepreneur et la société et de 300000dh pour la coopérative.",
-    },
-    {
-      question: "quel est l'age maximal pour bénéficier du soutien?",
-      answer: "de 18 à 35 ans (peut atteindre 45 ans)",
-    },
-    {
-      question:
-        "quelles sont les conditions qui doivent êtres vérifiées chez les coopératives pour bénéficier du soutien?",
-      answer:
-        "la coopérative doit avoir impérativement 30% des femmes + ne doit pas être familiale + doit avoir au moins un ans d'exercice.",
+        "Dans le pourcentage de 60%. 100 000.00dh pour les autos entrepreneurs et les sociétés. 300 000.00dh pour les coopératives.",
     },
     {
       question: "que couvrira le financement?",
-      answer: "Le soutien vise à financer uniquement des équipements fixes.",
+      answer: "Le soutien vise à financer des équipements fixes.",
     },
     {
       question:
@@ -76,11 +72,16 @@ const Faq = () => {
       answer: "Le soutien exige l'installation physique (local).",
     },
   ];
-  return (
+  const maintenance = true;
+  return maintenance ? (
+    <Maintenance />
+  ) : (
     <main className="container mx-auto w-10/12 mt-16 flex justify-center items-center">
       <div className="flex flex-col gap-y-10">
         <div>
-          <h1 className='text-[#040650] font-bold text-4xl lg:w-[450px]'>FAQ</h1>
+          <h1 className="text-[#040650] font-bold text-4xl lg:w-[450px]">
+            FAQ
+          </h1>
           <p className="p-2 text-[#696969]">Les question plus fréquentes.</p>
         </div>
         <div className="relative">
