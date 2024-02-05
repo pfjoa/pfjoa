@@ -72,7 +72,7 @@ const Faq = () => {
       answer: "Le soutien exige l'installation physique (local).",
     },
   ];
-  const maintenance = true;
+  const maintenance = false;
   return maintenance ? (
     <Maintenance />
   ) : (
